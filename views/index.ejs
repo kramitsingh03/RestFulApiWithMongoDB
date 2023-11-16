@@ -21,6 +21,7 @@
                 <p>
                     <%= chat.msg%>
                     <form action="/chats/<%= chat.id %>/edit" method="get"><button>Edit</button></form>
+                    <form action="/chats/<%= chat.id %>?_method=DELETE" method="post"><button>Delete</button></form>
                 </p>
             </div>
 
